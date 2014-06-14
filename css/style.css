@@ -1,5 +1,5 @@
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, 
@@ -41,7 +41,6 @@ a:hover {
 #footer
 {
    width:100%;
-	min-width:960px;
 	background:#fff;
 }
 
@@ -169,11 +168,6 @@ a:hover {
 	background: none;
 	padding: 65px 0px 0px;
 	min-height:390px;
-}
-
-#bannerleft {
-	float: left;
-	width: 325px;
 }
 
 #bannerleft {
@@ -530,10 +524,43 @@ a:hover {
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px){
 	#bannerleft {
-		width: 100%;
-	}
-	
+	width: 320px;
+	height: 320px;
+	background: url(hello.jpg) no-repeat;
+	border-radius:180px;
+      margin: auto;
+        margin-bottom: 20px; 
+}
+
+#intro .container {
+	background: none;
+	padding: 25px 0px 0px 0;
+}
+
 	#bannerright {
 		width: 100%;
+                float: clear;
+                padding: 0 40px;
 	}
+
+#nav {
+	padding:0px 0px 20px;
+}
+
+#social-icon{
+	float: left;
+        margin-bottom: 10px;
+}
+
+#header {
+	padding:20px 0px 5px;
+}
+
+#intro {
+	padding-bottom:15px;
+}
+
+#work, #resume, #footer {
+	padding:15px 0 15px 0;
+}
 }
