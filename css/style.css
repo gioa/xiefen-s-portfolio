@@ -362,14 +362,14 @@ position: relative; top: 0; left: 0;
 
 .direction-l {
   position: relative;
-  width: 300px;
+  width: 296px;
   float: left;
   text-align: right;
 }
 
 .direction-r {
   position: relative;
-  width: 300px;
+  width: 296px;
   float: right;
 }
 
