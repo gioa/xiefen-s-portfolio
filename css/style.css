@@ -499,7 +499,6 @@ position: relative; top: 0; left: 0;
 	list-style: none;
 
 }
-}
 
 /* ================ Timeline Media Queries ================ */
 
@@ -541,7 +540,7 @@ position: relative; top: 0; left: 0;
 	display: block;
 	width: 12px;
 	height: 12px;
-	margin-left: -9px;
+	margin-left: -6px;
 	background: #fff;
 	border-radius: 10px;
 	border: 4px solid rgb(255,80,80);
