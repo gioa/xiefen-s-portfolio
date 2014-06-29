@@ -259,6 +259,27 @@ div.content{
 	border-bottom:1px dashed #ddd;
 	padding: 40px 0 40px 0;
 }
+.button{
+	width: 250px;
+	display: block;
+	line-height: 35px;
+	height: 100%;
+	position: relative;
+	top: 9px;
+	background-color: #388438;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	
+  text-decoration: none;
+}
+.button:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+}
 
 /* ================ drawings.html  ================ */
     
@@ -315,6 +336,7 @@ position: relative; top: 0; left: 0;
     background: url(next.png) right 48% no-repeat;
     z-index:999999;
 }
+
 
 /* ================ The Timeline ================ */
 
