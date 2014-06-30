@@ -250,11 +250,23 @@ color: #428bca;
 text-decoration: none;
 }
 
+.thumbnail-borderless
+{
+  border:none;
+}
+
+.joy-thumbnail-title
+{
+  padding: 4px 0;
+}
+
+.thumbnail img{
+	max-height: 100%;
+}
 
 /* ================ Project page  ================ */
 
 div.content{
-	#background-color: #f6f6f6;
 	border-top:1px dashed #ddd;
 	border-bottom:1px dashed #ddd;
 	padding: 40px 0 40px 0;
@@ -272,14 +284,13 @@ div.content{
 	text-align: center;
 	color: #fff;
 	
-  text-decoration: none;
+  	text-decoration: none;
 }
 .button:hover {
   color: yellow;
   text-decoration: none;
 }
 
-}
 
 /* ================ drawings.html  ================ */
     
@@ -622,19 +633,7 @@ position: relative; top: 0; left: 0;
 
 }
 
-.thumbnail-borderless
-{
-  border:none;
-}
 
-.joy-thumbnail-title
-{
-  padding: 4px 0;
-}
-
-.thumbnail img{
-	max-height: 100%;
-}
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px){
