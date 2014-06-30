@@ -334,14 +334,14 @@ position: relative; top: 0; left: 0;
 }
 
 .previous{ 
-	position: absolute; top: 30px; left: 70px;
+	position: absolute; top: 30px; left: 60px;
     float:left;
     text-align:left;
 	background: url(prev.png) left 48% no-repeat;
 	z-index:999999;
 }
 .next {
-	position: absolute; top: 30px; right: 70px;
+	position: absolute; top: 30px; right: 60px;
     float:right;
     text-align:right;
     background: url(next.png) right 48% no-repeat;
