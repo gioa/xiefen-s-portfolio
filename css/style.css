@@ -1,4 +1,4 @@
-a {
+a, a:hover {
   text-decoration: none;
 }
 
@@ -16,7 +16,8 @@ body {
 	font-family: 'Quattrocento', serif;
 	font-size: 14px;
 	color: #3e3e3e;
-	background-color:white;
+	background-color:#fff;
+	width:100%;
 }
 
 .container {
@@ -26,23 +27,12 @@ body {
 
 p a, #nav a, h2 a {
 	color: #000;
-	border-bottom:1px dashed #000;
-}
-
-a:hover {
-	border-bottom:none;
+	/*border-bottom:1px dashed #000;*/
 }
 
 
-#header,
-#nav,
-#intro,
-#work,
-#footer
-{
-   	width:100%;
-	background:#fff;
-}
+
+
 
 #header {
 	padding:50px 0px 5px;
@@ -159,8 +149,8 @@ a:hover {
 
 #intro {
 	background-color: #f6f6f6;
-	border-top:1px dashed #ddd;
-	border-bottom:1px dashed #ddd;
+	/*border-top:1px solid #ddd;
+	 border-bottom:1px dashed #ddd;*/
 	padding-bottom:65px;
 }
 
@@ -221,11 +211,14 @@ a:hover {
 }
 
 #work, #resume, #footer {
-	padding:40px 0 40px 0;
+	padding:40px 0 40px 0;	
+	/*
 	border-top:1px dashed #ddd;
-	border-bottom:1px dashed #ddd;
+	border-bottom:1px dashed #ddd;*/
 }
-
+#work {
+	border-bottom:1px solid #ddd;
+}
 
 
 #footer {
@@ -250,20 +243,97 @@ color: #428bca;
 text-decoration: none;
 }
 
+
 .thumbnail-borderless
 {
   border:none;
 }
-
+/*
 .joy-thumbnail-title
 {
-  padding: 4px 0;
+  display:none;
+  padding: 10px 10px 10px 10px;
+  color: #212121;
+
+}*/
+
+.thumbnail{
+	overflow:hidden;
+	position:relative;
+	text-align: center;
 }
 
 .thumbnail img{
 	max-height: 100%;
 }
 
+.thumbnail .mask{
+	position:absolute;
+	overflow: hidden;
+	top:0;
+	left:0;
+}
+
+.thumbnail-first img{
+	transition:all 0.2s linear;
+}
+
+.thumbnail-first .mask {
+    opacity: 0;
+    background-color: rgba(116,116,116, 0.8); 
+    transition: all 0.4s ease-in-out;
+    width:100%;
+    height:100%;
+}
+
+.thumbnail-first h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 50% 0 0 0
+}
+.thumbnail-first p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.thumbnail-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.thumbnail-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.thumbnail-first:hover img { 
+    transform: scale(1.1);
+} 
+.thumbnail-first:hover .mask { 
+    opacity: 1;
+}
+.thumbnail-first:hover h2,
+.thumbnail-first:hover p,
+.thumbnail-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.thumbnail-first:hover p {
+    transition-delay: 0.1s;
+}
+.thumbnail-first:hover a.info {
+    transition-delay: 0.2s;
+}
 /* ================ Project page  ================ */
 
 div.content{
@@ -561,6 +631,17 @@ position: relative; top: 0; left: 0;
 
 @media screen and (max-width: 660px) {
 
+.thumbnail-first h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 30% 0 0 0
+}
+
 .timeline {
  	width: 100%;
 	padding: 4em 0 1em 0;
@@ -661,6 +742,9 @@ position: relative; top: 0; left: 0;
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px){
+
+
+
 	#bannerleft {
 	width: 320px;
 	height: 320px;
