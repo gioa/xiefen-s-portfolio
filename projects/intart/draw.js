@@ -98,8 +98,11 @@ function draw(canvas, ctx) {
       drawcycle(ctx,width/2, height/2,20*i,15,240,114,61,1-i%10/10);//240, 114, 61  
       i+=1;
 
-      if(i==30){
+      if(i==20){
         i=1;
+         ctx.fillStyle = "black";
+        ctx.fillRect(-width, -height, 2*width, 2*height);
+
       }
 
    }
