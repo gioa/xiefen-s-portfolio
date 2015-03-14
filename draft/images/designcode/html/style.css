@@ -1,0 +1,418 @@
+/* Write CSS for Exercise 2 in this file. */
+
+
+/* Default CSS for images. Feel free to modify as you see fit. 
+
+
+
+#banner {
+  display: inline-block;
+  width: 715px;
+  height: 219px;
+  background-image: url(banner.jpg);
+}
+
+#arrow-button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(arrow_button.png);
+  background-size: 30px 30px;
+}
+
+#uw-logo {
+  display: inline-block;
+  width: 534px;
+  height: 53px;
+  background-image: url(uw_logo.png);
+  background-size: 534px 53px;
+}
+
+#dub-logo {
+  display: inline-block;
+  width: 103px;
+  height: 53px;
+  background-image: url(dub_logo.jpg);
+  background-size: 103px 53px;
+}
+
+*/
+
+
+/*
+ * -- General STYLES --
+ */
+body {
+		position:relative;
+    min-width: 800px;
+  		
+}
+h1{
+	font: bold 2em;
+}
+
+
+/*
+ * -- Header STYLES --
+ */
+
+#header{
+margin: 50px;
+	
+}
+
+#mhcid-logo {
+  display: inline-block;
+  width: 161px;
+  height: 146px;
+  background-image: url(logo.jpg);
+}
+
+
+/*
+ * -- MENU STYLES --
+ */
+#navigation{
+ 	float:right;
+ 	margin-top:80px;
+ 	
+}
+ 
+#navigation ul li{
+	display: inline;
+	padding: 10px;
+	text-align: center;
+	color: #00aeef;
+  cursor: pointer;
+
+}
+#navigation ul li:hover
+{
+   color:#6ac17b;
+}
+
+#navigation ul li+li:before{
+  display: inline-block;
+  position: relative;
+  left: -10px;
+  content: "|"; 
+}
+
+
+
+/*
+ * -- Banner --
+ 
+*/
+#banner {
+  position:absolute;
+  top: 160px;
+  left:0px;
+  width:100%;
+  height: 620px;
+  background-image: url(hcid.jpeg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  
+}
+ 
+  
+
+
+/*
+ * -- Notification --
+ */
+
+#app-deadline{
+	margin-top: 570px;
+	text-align: center;
+	color: #ffffff;
+	background-color:#00aeef;
+	padding: 60px 50px 50px 40px;
+}
+#app-deadline p:first-child{
+	font-size:2em;
+	font-weight: bold;	
+}
+
+
+/*
+ * -- Program info --
+ */
+ 
+#info {
+	padding-top:50px;
+  width:80%;
+  margin:auto;
+  text-align: center;
+
+  /*
+	margin-left:15%;
+	margin-right:15%;
+	border-top: 1px solid #aaa;*/
+	
+}
+
+#name-header{
+	color:#6f6767;
+	font-weight:bold;
+}
+
+
+#info p{
+  display:inline-block;
+  width:50%;
+  position:relative;
+  float:right;
+  text-align: left;
+}
+
+
+#cross-discipline li{
+  display:none;
+  /*
+   position:relative;
+   display: inline-block;
+
+   list-style-type: none; 
+   text-align: left;
+*/
+}	
+
+#info p:first-of-type::after{
+  display: inline;
+  content: "Computer Science & Engineering, Design, Human Centered Design & Engineering and The Information School.";
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.5;
+  padding-bottom: 100px;
+}
+
+
+
+#info p:first-of-type:before{
+  display: inline-block;
+  width:200px;
+  height: 200px;
+  content: "";  
+  background-image: url(1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; 
+  position:absolute;
+  left:-80%;
+
+}
+
+
+#info p+p+p::before{
+  display: inline-block;
+  width:200px;
+  height: 200px;
+  content: "";	
+  background-image: url(2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position:absolute;
+  top:-60%;
+  left:10%;
+}
+
+#info p+p{
+  padding-top:25%;
+}
+
+#info p+p+p{
+  padding-top:10%;
+  padding-bottom:50px;
+}
+
+#info p+p+p::after{
+  display: inline-block;
+  width:200px;
+  height: 200px;
+  content: "";	
+  background-image: url(3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position:absolute;
+  top:30%;
+  left:-80%;
+
+}
+
+/*
+ * -- News --
+ */
+ 
+ #news{
+ 	clear:both;
+	background-color:#6ac17b;
+	color:#fff;
+	padding-top:50px;
+	padding-bottom:50px;
+	text-align: center;
+
+}
+
+#news div{
+	display:inline-block;
+	width:15%;
+	text-align: left;
+	vertical-align:top;
+}
+.news-item-title{
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+ 
+/*
+ * -- footer --
+*/
+  
+#footer{
+	padding:50 50 50 50px;
+	background-color:#c5c5c5;
+	height:150px;
+	width:100%;
+  position: relative;
+}
+
+#uw-logo::before{
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 161px;
+  height: 161px;
+  left:50px;
+  background-image: url(logo.png);
+}
+
+#uw-logo::after{
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  content: "Sponsored By:";
+  padding-top:30px;
+  font-weight:bold;
+}
+#dub-logo::before{
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  content: "University of Washington";
+  padding-top:60px;
+}
+#dub-logo::after{
+ display: inline-block;
+  position: absolute;
+  left: 250px;
+  padding-top:90px;
+  content: "Design Use Build";
+}
+
+
+#email-signup{
+	position:absolute;
+  bottom: 50px;
+  right:100px;
+	display:block;
+	font-weight:bold;
+  z-index: 1000;
+}
+#email-signup::after{
+  display: inline-block;
+  position: relative;
+  content: "Subscribe";
+  left:15px;
+  padding: 10px;
+  background-color: #00aeef;
+  color:white;
+  cursor: pointer;
+ 
+}
+input{
+	padding:10px;
+	width:150px;
+}
+
+#contact{
+	position:absolute;
+	/*top:2405px;*/
+  bottom: 0px;
+  left:250px;
+	display:block;
+	font-weight:bold;
+  z-index: 1000;
+	
+}
+#contact-email::before{
+  display: inline-block;
+  position: relative;
+  content: ":";
+  color: black;
+}
+#contact-email{
+	color:#00aeef;
+	font-weight:normal;
+  cursor: pointer;
+}
+
+@media screen and (min-width:1000px){
+  #info p:first-of-type:before{
+  display: inline-block;
+  width:300px;
+  height: 300px;
+  content: "";  
+  background-image: url(1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; 
+  position:absolute;
+  left:-80%;
+
+}
+
+
+#info p+p+p::before{
+  display: inline-block;
+  width:300px;
+  height: 300px;
+  content: "";  
+  background-image: url(2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position:absolute;
+  top:-60%;
+  left:10%;
+}
+
+#info p+p{
+  padding-top:25%;
+}
+
+#info p+p+p{
+  padding-top:10%;
+  padding-bottom:50px;
+}
+
+#info p+p+p::after{
+  display: inline-block;
+  width:300px;
+  height: 300px;
+  content: "";  
+  background-image: url(3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position:absolute;
+  top:30%;
+  left:-80%;
+
+}
+
+}
+
+
+
+
+
