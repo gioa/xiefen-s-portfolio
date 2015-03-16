@@ -51,6 +51,13 @@ function draw(canvas, ctx) {
 	var tempR = Math.sqrt(Math.pow(dX,2) + Math.pow(dY,2) );
 	var newX = x + r*dX/tempR;
 	var newY = y + r*dY/tempR;
+	
+	//make the eye looking at the middle  
+	if((Math.abs(dX)<r) && (Math.abs(dY)< r))
+	{
+		newX = x;
+		newY = y;
+	}
 	ctx.beginPath();
 	
 	ctx.arc(newX,newY,18,0,2 * Math.PI, false);

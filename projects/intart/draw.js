@@ -29,12 +29,6 @@ function init(canvas, ctx) {
 }
 
 
-function Cycle(){
-
-
-}
-
-
 
 function drawcycle(ctx,cx,cy,radius,lw,r,g,b,alpha){
 
@@ -45,30 +39,6 @@ function drawcycle(ctx,cx,cy,radius,lw,r,g,b,alpha){
     ctx.stroke();
     ctx.closePath();
 
-}
-
-function drawStar(ctx,cx,cy,spikes,outerRadius,innerRadius){
-      var rot=Math.PI/2*3;
-      var x=cx;
-      var y=cy;
-      var step=Math.PI/spikes;
-
-      ctx.beginPath();
-      ctx.moveTo(cx,cy-outerRadius)
-      for(i=0;i<spikes;i++){
-        x=cx+Math.cos(rot)*outerRadius;
-        y=cy+Math.sin(rot)*outerRadius;
-        ctx.lineTo(x,y)
-        rot+=step
-
-        x=cx+Math.cos(rot)*innerRadius;
-        y=cy+Math.sin(rot)*innerRadius;
-        ctx.lineTo(x,y)
-        rot+=step
-      }
-      ctx.lineTo(cx,cy-outerRadius)
-      ctx.stroke();
-      ctx.closePath();
 }
 
 
@@ -93,9 +63,9 @@ function draw(canvas, ctx) {
   if (frameCount % wait === 0) {
     
       drawcycle(ctx,width/4, height/4,20*i,15,89,208,38,1-i%10/10); //89,208,38
-      drawcycle(ctx,width/4, height/2,20*i,15,241,235,52,1-i%10/10);//241, 235, 52
-      drawcycle(ctx,width/2, height/4,20*i,15,30,178,239,1-i%10/10);//30, 178, 239
-      drawcycle(ctx,width/2, height/2,20*i,15,240,114,61,1-i%10/10);//240, 114, 61  
+      drawcycle(ctx,width*3/4, height/4,20*i,15,241,235,52,1-i%10/10);//241, 235, 52
+      drawcycle(ctx,width/4, height*3/4,20*i,15,30,178,239,1-i%10/10);//30, 178, 239
+      drawcycle(ctx,width*3/4, height*3/4,20*i,15,240,114,61,1-i%10/10);//240, 114, 61  
       i+=1;
 
       if(i==20){
