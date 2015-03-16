@@ -13,7 +13,7 @@ var eyeX,eyeY;
 function init(canvas, ctx) {
 	width = canvas.width;
     height = canvas.height;
-    console.log(width,height);
+    // console.log(width,height);
   
   	//draw the monster without eyes
 	img = new Image();
@@ -80,11 +80,11 @@ function draw(canvas, ctx) {
 }
 
 function handler(event){
-   console.log("mouse move");
+   //console.log("mouse move");
  
    clientX =event.clientX;
    clientY = event.clientY;
-   console.log(clientX,clientY);
+   //console.log(clientX,clientY);
 }
 
 

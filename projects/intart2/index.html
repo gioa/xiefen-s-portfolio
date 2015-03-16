@@ -4,11 +4,22 @@
     <title>HCID 520 Generative Art</title>
     <style>
 * { padding: 0; margin: 0; }
+
     </style>
   </head>
   <body>
-    <canvas id="canvas" width="800" height="600"></canvas>
+    <canvas id="canvas" ></canvas>
     <script src="draw.js"></script>
     <script src="scaffold.js"></script>
   </body>
+  <script>
+  // 
+  window.addEventListener("resize", function() {
+     if(canvas.width ==0 ){
+      location.reload();       
+    }
+  
+  });
+
+  </script>
 </html>
