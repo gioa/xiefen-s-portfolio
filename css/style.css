@@ -342,10 +342,7 @@ text-decoration: none;
 }
 
 
-.m-profile {
- text-align: center;
 
-}
 
  .middledesc{
  	text-align: left;
@@ -639,6 +636,8 @@ text-decoration: none;
   text-align: center;
 }
 
+
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -827,12 +826,17 @@ text-decoration: none;
     z-index: 15;
   }
 
+  .iframebox {
+    width:80%;
+  }
+
 }
 
 
 
 /* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 480px){
+/*@media screen and (max-device-width: 480px){*/
+@media screen and (max-width: 480px){
 
   #intro{
 
@@ -913,6 +917,10 @@ text-decoration: none;
   #social-icon{
 
   display:none;
+  }
+
+  .iframebox {
+    width:100%;
   }
 
 
