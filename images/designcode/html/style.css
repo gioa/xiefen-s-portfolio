@@ -119,7 +119,6 @@ margin: 50px;
  
   
 
-
 /*
  * -- Notification --
  */
@@ -238,6 +237,7 @@ margin: 50px;
   position:absolute;
   top:30%;
   left:-80%;
+
 
 }
 
@@ -409,6 +409,10 @@ input{
   left:-80%;
 
 }
+ #news{
+  margin-top: 750px;
+ }
+
 
 }
 

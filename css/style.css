@@ -1,4 +1,4 @@
-a, a:hover {
+a, a:hover, a:focus {
   text-decoration: none;
 }
 
@@ -21,7 +21,8 @@ p a, #nav a, h2 a {
 body {
 	font-family: 'Quattrocento', serif;
 	font-size: 14px;
-	color: #3e3e3e;
+
+  color: #3e3e3e;
 	background-color:#fff;
 	width:100%;
 }
@@ -345,11 +346,13 @@ text-decoration: none;
 
 
  .middledesc{
- 	text-align: left;
- 	width:80%;
+ /*	text-align: left;*/
+ 	width:100%;
  	margin-left: auto;
 	margin-right: auto;
  }
+
+ 
 
 
 
@@ -554,6 +557,7 @@ text-decoration: none;
     box-shadow: none;
     overflow: scroll;
     font-family: 'Quattrocento', serif;
+    font-size: 1.1em;
 	
 }
 
@@ -652,6 +656,11 @@ text-decoration: none;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.img-responsive {
+
+  padding-bottom: 10px;
 }
 
 
